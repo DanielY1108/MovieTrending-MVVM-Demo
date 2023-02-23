@@ -29,7 +29,7 @@
                 </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="xJl-kr-hWt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Fd6-XF-FQh"/>
                 <constraint firstItem="xJl-kr-hWt" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="aS6-1C-4wy"/>

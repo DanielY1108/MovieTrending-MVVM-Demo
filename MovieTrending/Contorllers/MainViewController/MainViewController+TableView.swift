@@ -14,12 +14,14 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         self.tableView.dataSource = self
         
         self.tableView.backgroundColor = .clear
+        self.tableView.separatorStyle = .none
         
         self.registerCells()
     }
     
     func registerCells() {
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        // Nib으로 만들었기 때문에 nib 설징 및 identifier 설정
+        tableView.register(MainMovieCell.register(), forCellReuseIdentifier: MainMovieCell.identfier)
     }
     
     func reloadTableView() {
@@ -37,14 +39,16 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: MainMovieCell.identfier, for: indexPath) as? MainMovieCell else { return UITableViewCell() }
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        
-        let movieData = cellDataSource[indexPath.row]
-        cell.textLabel?.text = self.viewModel.getMovieTitle(movieData)
-        
+        let cellViewModel = cellDataSource[indexPath.row]
+        cell.setupCell(viewModel: cellViewModel)
+        cell.selectionStyle = .none
         return cell
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        200
+    }    
     
 }
