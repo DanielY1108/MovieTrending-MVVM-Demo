@@ -16,4 +16,15 @@ class MainViewModel {
     func numberOfRows(in section: Int) -> Int {
         5
     }
+    
+    func getData() {
+        NetworkService.getTrendingMovies { result in
+            switch result {
+            case .success(let data):
+                print("Top Trending count: \(data.results.count)")
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
 }

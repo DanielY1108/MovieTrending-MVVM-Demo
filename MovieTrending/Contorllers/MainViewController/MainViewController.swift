@@ -19,7 +19,10 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         
         configView()
-        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        viewModel.getData()
     }
     
     func configView() {
