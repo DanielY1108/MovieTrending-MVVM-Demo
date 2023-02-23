@@ -62,4 +62,17 @@ class MainViewController: UIViewController {
             self.reloadTableView()
         }
     }
+    
+    func openDetail(movieId: Int) {
+        guard let movie = viewModel.retriveMovie(with: movieId) else {
+            return
+        }
+        // ⭐️ 디테일 뷰컨트롤러가 호출되면 디테일 뷰모델을 갖고 생성한다.
+        // 여기서 뷰모델은 movie데이터를 갖고 만든다
+        let detailsViewModel = DetailsMovieViewModel(movie: movie)
+        let detailsController = DetailsMovieViewController(viewModel: detailsViewModel)
+        DispatchQueue.main.async {
+            self.navigationController?.pushViewController(detailsController, animated: true)
+        }
+    }
 }

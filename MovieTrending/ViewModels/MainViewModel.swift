@@ -52,4 +52,12 @@ class MainViewModel {
     func getMovieTitle(_ movie: Movie) -> String {
         return movie.title
     }
+    
+    // 디테일뷰에 id를 통해 전달하기 위해
+    func retriveMovie(with id: Int) -> Movie? {
+        guard let movie = dataSource?.results.first(where: {$0.id == id}) else {
+            return nil
+        }
+        return movie
+    }
 }
