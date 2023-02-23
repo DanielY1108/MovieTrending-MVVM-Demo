@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="MovieTrending" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="Yc8-Ma-6w8" id="oxd-ez-DSm"/>
                 <outlet property="tableView" destination="xJl-kr-hWt" id="I0b-wv-XDV"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -23,13 +24,18 @@
                     <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Yc8-Ma-6w8">
+                    <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="xJl-kr-hWt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Fd6-XF-FQh"/>
                 <constraint firstItem="xJl-kr-hWt" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="aS6-1C-4wy"/>
+                <constraint firstItem="Yc8-Ma-6w8" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="cfz-Rp-IK7"/>
                 <constraint firstAttribute="bottom" secondItem="xJl-kr-hWt" secondAttribute="bottom" id="jik-AP-fnZ"/>
+                <constraint firstItem="Yc8-Ma-6w8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jk2-jy-2ky"/>
                 <constraint firstItem="xJl-kr-hWt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="wby-VW-mpq"/>
             </constraints>
             <point key="canvasLocation" x="6.8702290076335872" y="-11.267605633802818"/>

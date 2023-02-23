@@ -10,6 +10,7 @@
 		650311DD29A74CCA0046C91E /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650311DC29A74CCA0046C91E /* NetworkConstant.swift */; };
 		650311DF29A74DFC0046C91E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650311DE29A74DFC0046C91E /* NetworkService.swift */; };
 		650311E129A74E500046C91E /* TrendingMoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650311E029A74E500046C91E /* TrendingMoviesModel.swift */; };
+		650311E329A755330046C91E /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650311E229A755330046C91E /* Observable.swift */; };
 		65A3E6D229A73D1100286F83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A3E6D129A73D1100286F83 /* AppDelegate.swift */; };
 		65A3E6D429A73D1100286F83 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A3E6D329A73D1100286F83 /* SceneDelegate.swift */; };
 		65A3E6DB29A73D1200286F83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65A3E6DA29A73D1200286F83 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 		650311DC29A74CCA0046C91E /* NetworkConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConstant.swift; sourceTree = "<group>"; };
 		650311DE29A74DFC0046C91E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		650311E029A74E500046C91E /* TrendingMoviesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingMoviesModel.swift; sourceTree = "<group>"; };
+		650311E229A755330046C91E /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		65A3E6CE29A73D1100286F83 /* MovieTrending.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieTrending.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A3E6D129A73D1100286F83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65A3E6D329A73D1100286F83 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 		65A3E6F229A7402100286F83 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				650311E229A755330046C91E /* Observable.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				65A3E6EC29A73E7600286F83 /* MainViewController.swift in Sources */,
 				65A3E6D229A73D1100286F83 /* AppDelegate.swift in Sources */,
 				650311E129A74E500046C91E /* TrendingMoviesModel.swift in Sources */,
+				650311E329A755330046C91E /* Observable.swift in Sources */,
 				65A3E6D429A73D1100286F83 /* SceneDelegate.swift in Sources */,
 				650311DD29A74CCA0046C91E /* NetworkConstant.swift in Sources */,
 				65A3E6F829A7422800286F83 /* MainViewController+TableView.swift in Sources */,
